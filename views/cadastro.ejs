@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<ink rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+	<meta charset="utf-8">
+	<title>Palakaram.online</title>
+	<link rel="icon" href="/img/core-img/favicon.ico">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="/recursos/cadastro2.css">
+		<link rel="stylesheet" href="/css/cadastro2.css">
+	<script src="/recursos/cadastro.js"></script>
+	<style>
+
+	.wizard-card {
+		-moz-box-shadow:    inset 0 0 10px #000000;
+		-webkit-box-shadow: inset 0 0 10px #000000;
+		box-shadow:         inset 0 0 10px #000000;
+	}
+
+	.form-controll{
+		padding: 10px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		box-sizing: border-box;
+		-webkit-transition: all 0.3s ease-in-out;
+		margin-left: 35%;
+		width: 400px;
+
+ }
+
+
+	.modal-content {
+	    background-color: #fff;
+	    border: 1px solid rgba(0,0,0,.2);
+	    border-radius: .3rem;
+			margin: 10px;
+	}
+
+	.btn-danger {
+	    color: #fff;
+	    background-color: #d9534f;
+	    border-color: #d9534f;
+			margin-left: 20px;
+	}
+
+	.btn {
+	    display: inline-block;
+	    font-weight: 400;
+	    line-height: 1.25;
+	    text-align: center;
+	    white-space: nowrap;
+	    vertical-align: middle;
+	    -webkit-user-select: none;
+	    -moz-user-select: none;
+	    -ms-user-select: none;
+	    user-select: none;
+	    border: 1px solid transparent;
+	    padding: .5rem 1rem;
+	    font-size: 1rem;
+	    border-radius: .25rem;
+	    -webkit-transition: all .2s ease-in-out;
+	    -o-transition: all .2s ease-in-out;
+	    transition: all .2s ease-in-out;
+	}
+
+	.modal-body {
+	    padding: 15px;
+	}
+
+.text-center {
+    text-align: center!important;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #464a4c;
+    background-color: #fff;
+    background-image: none;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+}
+
+
+.input-group-addon {
+		border-radius: .25rem;
+    /* line-height: 1.25; */
+    color: #464a4c;
+    background-color: #fbb710;
+}
+
+
+.input-group {
+    margin: 20px 10px;
+}
+
+.input-group {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+
+/*nav bar*/
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 100px;
+  left: 0;
+  background-color: #fbb710;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 100px;
+  margin-top: -100PX;
+  height: 100%;
+
+}
+
+.sidenav a {
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.sidenav a:hover {
+  color: black;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.nbutton1 {
+  margin-left: 10%;
+  background-color: black;
+  color: black;
+  border: 2px solid #fbb710;
+  text-align:center;
+  width : 80%;
+  border-radius: 10px;
+  vertical-align: middle;
+  text-align:center;
+  padding: 5px;
+}
+
+.nbutton1:hover {
+  background-color: white;
+  color: white;
+}
+
+/*NAV BAR*/
+
+	  .header{
+	    font-size: 33px;
+	    width: 100%;
+	    text-align: center;
+	  }
+
+
+
+	  .input-groupp {
+	    margin: 20px 10px;
+
+	  }
+
+
+.box{
+	width: 98%;
+	height: 30px;
+	border-radius: 15px;
+	padding-left: 10px;
+	border: 1px solid rgba(0,0,0,.15);
+	outline: none;
+}
+
+.box1{
+	width: 100%;
+	height: 100px;
+	border-radius: 15px;
+	padding-left: 18px;
+	padding-top: 10px;
+	border: 1px solid rgba(0,0,0,.15);
+	outline: none;
+	font-family:sans-serif;
+}
+
+.button {
+	padding: 10px 137px;
+  background-color: #fbb710;
+  border-radius:10px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  margin: -5px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+
+}
+
+.button1 {
+  background-color: #black;
+  color: black;
+  border: 0px solid #fbb710;
+	margin: -12px;
+	width: 337px;
+}
+
+.button1:hover {
+  background-color: black;
+  color: white;
+
+}
+
+.open{
+	margin-top: 20px;
+}
+
+body{
+	font-size: 14px;
+	font-family: "helveticaneuemedium";
+}
+
+.order{
+	border-radius: 5px;
+	background-color: #fbb710;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 40px;
+	font-size: 12px;
+	font-family: sans-serif;
+}
+
+.pad{
+	margin-top: 5px;
+}
+
+input[type=text]:focus, textarea:focus {
+box-shadow: 0 0 5px #fbb710;
+transition: border 0.2s linear 0s, box-shadow 0.3s linear 0s;
+border: 1px solid #fbb710;
+}
+
+body {
+ background-image: url("/img/bg-img/login.png");
+ height: 720px;
+ background-repeat: no-repeat;
+}
+
+	</style>
+
+</head>
+
+<body>
+
+	<div class="main-content-wrapper d-flex clearfix" >
+
+			<div id="mySidenav" class="sidenav">
+		    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		    <a href="#"><button class="nbutton nbutton1"><a href="/">Home</a></button>
+		    <a href="#"><button class="nbutton nbutton1"><a href="/in">Product</a></button>
+		    <a href="#"><button class="nbutton nbutton1"><a href="/NovoCadastro1">Contact</a></button>
+				<a href="/login"><button class="nbutton nbutton1">Login</a></button>
+		    <a href="/signup"><button class="nbutton nbutton1">Signup</a></button>
+
+		  </div>
+		  <span class="open" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; <a href="/"><img src="/img/core-img/logo.png" width = "15%" style="margin-bottom:-29px; margin-left:-2px;"></a></span>
+
+		  <script>
+		  function openNav() {
+		    document.getElementById("mySidenav").style.width = "250px";
+		  }
+
+		  function closeNav() {
+		    document.getElementById("mySidenav").style.width = "0";
+		  }
+		  </script>
+
+
+
+<div>
+
+	<div class="wizard-card form-controll">
+
+		<section class="header">
+
+
+			<h1 class="order">Order Now</h1>
+
+		</section>
+
+
+<div>
+	<br>
+	<div>
+			<form action="/order" method="POST">
+
+<div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content" style="background-color: fff;">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Your add Cart</h5>
+      </div>
+      <div class="modal-body">
+        <table class="show-cart tabe">
+
+        </table>
+      </div>
+      <div class="modal-footer">  <div>Total price : <b>$</b> <span class="total-cart" style="font-weight: bold;" name="mealstotal"></span> </div>
+
+      </div>
+    </div>
+    </div>
+
+
+
+				<br>
+				<div class="input-groupp">
+					<label for="Country" class="font label">Country:</label><br>
+
+				  <input class="box margin-top: pad" type="text" list="browsers" id='Country' name="Country" tab-index='1'>
+				  <datalist id="browsers">
+				    <option value="Canada">
+				    <option value="France">
+				    <option value="USA">
+				    <option value="UK">
+				    <option value="Germany">
+						<option value="Australia">
+				   	<option value="India">
+				   	<option value="swiss">
+					  <option value="Singapore">
+					  <option value="Malaysia">
+				  </datalist/>
+
+
+				<!--	<input class="box" type="text" id='Country' name='Country' tab-index='1' /> -->
+				</div>
+				<div class="input-groupp">
+					<label for="Address" class="font pad">Address:</label>
+					<input  class="box pad" type="text" id='Address' name='Address' tab-index='2' />
+				</div>
+
+				<div class="input-groupp" >
+					<form action="/action_page.php">
+					  <label for="email" class="font">Email:</label>
+					  <input type="text" class="box pad" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required tab-index='2' />
+					</form>
+
+		 <!--		<div class="input-group" >
+					<label for="Quantity" class="font">Quantity:</label>
+					<input class="box bb" type="text" id='Quantity' name='Quantity' tab-index='4' />
+				</div> -->
+
+				<div class="input-groupp">
+					<label for="Comments" style="margin-left:-10px;">Comments:</label>
+					<textarea class="box1 pad" type="text" id='Comments' name='Comments' style="margin-left:-10px;" tab-index='5' /></textarea>
+				</div>
+					<div class="input-groupp">
+						<button onclick="myFunction()">	<input type="submit" class="button button1" value="Order" tab-index='6' /></button>
+						<script>
+						function myFunction() {
+						  alert("Order was Successfully Updated!...");
+						}
+						</script>
+					</div>
+					<br>
+			</form>
+		</div>
+</div>
+	</div>
+</div>
+	<!-- ##### jQuery (Necessary for All JavaScript Plugins) ##### -->
+	<script src="/js/jquery/jquery-2.2.4.min.js"></script>
+	<!-- Popper js -->
+	<script src="/js/popper.min.js"></script>
+	<!-- Bootstrap js -->
+	<script src="/js/bootstrap.min.js"></script>
+	<!-- Plugins js -->
+	<script src="/js/plugins.js"></script>
+	<!-- Active js -->
+	<script src="/js/active.js"></script>
+
+	<script id="rendered-js">
+// ************************************************
+// Shopping Cart API
+// ************************************************
+
+var shoppingCart = (function() {
+  // =============================
+  // Private methods and propeties
+  // =============================
+  cart = [];
+
+  // Constructor
+  function Item(name, price, count) {
+    this.name = name;
+    this.price = price;
+    this.count = count;
+  }
+
+  // Save cart
+  function saveCart() {
+    sessionStorage.setItem('shoppingCart', JSON.stringify(cart));
+  }
+
+    // Load cart
+  function loadCart() {
+    cart = JSON.parse(sessionStorage.getItem('shoppingCart'));
+  }
+  if (sessionStorage.getItem("shoppingCart") != null) {
+    loadCart();
+  }
+
+
+  // =============================
+  // Public methods and propeties
+  // =============================
+  var obj = {};
+
+  // Add to cart
+  obj.addItemToCart = function(name, price, count) {
+    for(var item in cart) {
+      if(cart[item].name === name) {
+        cart[item].count ++;
+        saveCart();
+        return;
+      }
+    }
+    var item = new Item(name, price, count);
+    cart.push(item);
+    saveCart();
+  }
+  // Set count from item
+  obj.setCountForItem = function(name, count) {
+    for(var i in cart) {
+      if (cart[i].name === name) {
+        cart[i].count = count;
+        break;
+      }
+    }
+  };
+  // Remove item from cart
+  obj.removeItemFromCart = function(name) {
+      for(var item in cart) {
+        if(cart[item].name === name) {
+          cart[item].count --;
+          if(cart[item].count === 0) {
+            cart.splice(item, 1);
+          }
+          break;
+        }
+    }
+    saveCart();
+  }
+
+  // Remove all items from cart
+  obj.removeItemFromCartAll = function(name) {
+    for(var item in cart) {
+      if(cart[item].name === name) {
+        cart.splice(item, 1);
+        break;
+      }
+    }
+    saveCart();
+  }
+
+  // Clear cart
+  obj.clearCart = function() {
+    cart = [];
+    saveCart();
+  }
+
+  // Count cart
+  obj.totalCount = function() {
+    var totalCount = 0;
+    for(var item in cart) {
+      totalCount += cart[item].count;
+    }
+    return totalCount;
+  }
+
+  // Total cart
+  obj.totalCart = function() {
+    var totalCart = 0;
+    for(var item in cart) {
+      totalCart += cart[item].price * cart[item].count;
+    }
+    return Number(totalCart.toFixed(2));
+  }
+
+  // List cart
+  obj.listCart = function() {
+    var cartCopy = [];
+    for(i in cart) {
+      item = cart[i];
+      itemCopy = {};
+      for(p in item) {
+        itemCopy[p] = item[p];
+
+      }
+      itemCopy.total = Number(item.price * item.count).toFixed(2);
+      cartCopy.push(itemCopy)
+    }
+    return cartCopy;
+  }
+  /////////////////////////////////////////////////////////////////////////////////////////////
+  // cart : Array
+  // Item : Object/Class
+  // addItemToCart : Function
+  // removeItemFromCart : Function
+  // removeItemFromCartAll : Function
+  // clearCart : Function
+  // countCart : Function
+  // totalCart : Function
+  // listCart : Function
+  // saveCart : Function
+  // loadCart : Function
+  //////////////////////////////////////////////////////////////////////////////////////////////
+  return obj;
+})();
+
+
+// *****************************************
+// Triggers / Events
+// *****************************************
+// Add item
+$('.add-to-cart').click(function(event) {
+  event.preventDefault();
+  var name = $(this).data('name');
+  var price = Number($(this).data('price'));
+  shoppingCart.addItemToCart(name, price, 1);
+  displayCart();
+});
+
+// Clear items
+$('.clear-cart').click(function() {
+  shoppingCart.clearCart();
+  displayCart();
+});
+
+
+function displayCart() {
+  var cartArray = shoppingCart.listCart();
+  var output = "";
+  for(var i in cartArray) {
+    output += "<tr>"
+      + "<td>" + cartArray[i].name + "</td>"
+      + "<td>(" + cartArray[i].price + "$)</td>"
+      +  "</tr>";
+    output += "<tr>"
+      + "<td><br><div class='input-group btn-dark'><button class='rounded-0 minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name + ">-</button>"
+      + "<input type='text' name='mealsvalue'  class='item-count form-control text-center rounded-0' data-name='" + cartArray[i].name + "' value='" + cartArray[i].name + " : " + cartArray[i].count +" '>"
+      + "<button class='plus-item btn btn-primary input-group-addon rounded-0' data-name=" + cartArray[i].name + ">+</button></div></td>"
+      + "<td><br><button class='delete-item btn btn-danger' data-name=" + cartArray[i].name + ">X</button></td>"
+      + " = "
+      + "<td><br><input value= "+cartArray[i].total + " name='mealstotal' type='hidden'></td>"
+      +  "</tr>";
+  }
+  $('.show-cart').html(output);
+  $('.total-cart').html(shoppingCart.totalCart());
+  $('.total-count').html(shoppingCart.totalCount());
+}
+
+// Delete item button
+
+$('.show-cart').on("click", ".delete-item", function(event) {
+  var name = $(this).data('name')
+  shoppingCart.removeItemFromCartAll(name);
+  displayCart();
+})
+
+
+// -1
+$('.show-cart').on("click", ".minus-item", function(event) {
+  var name = $(this).data('name')
+  shoppingCart.removeItemFromCart(name);
+  displayCart();
+})
+// +1
+$('.show-cart').on("click", ".plus-item", function(event) {
+  var name = $(this).data('name')
+  shoppingCart.addItemToCart(name);
+  displayCart();
+})
+
+// Item count input
+$('.show-cart').on("change", ".item-count", function(event) {
+   var name = $(this).data('name');
+   var count = Number($(this).val());
+  shoppingCart.setCountForItem(name, count);
+  displayCart();
+});
+
+displayCart();
+
+    </script>
+
+
+
+</body>
+
+</html>

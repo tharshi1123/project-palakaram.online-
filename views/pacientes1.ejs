@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Palakaram.online</title>
+    <link rel="icon" href="/img/core-img/favicon.ico">
+    <link rel="stylesheet" href="/recursos/cadastro.css">
+    <style>
+th{
+  background-color: #FBB710;
+  font-size: 20px;
+  text-align-last: center;
+}
+table, th, td {
+  border: 1px solid white;
+  border-radius: 20px;
+  color: black;
+  table-layout: fixed;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+  width: 100px;
+  border-radius: 10px;
+}
+td {
+  background-color:#4a4a482b;
+}
+    </style>
+</head>
+<body>
+  <body class="exames">
+      <section class="header">
+        <br>
+          <center><h1 style="color:#000000; font-size: 28px;  font-family:  monospace;">CUSTOMER CONTACT DETAILS</h1></center>
+  <!--<div> <button class="bu"><a href="/Order">Order</a></button><br> </div>-->
+  <br>
+          </section>
+<table align="center" width="75%">
+  <col width="10%">
+  <col width="20%">
+  <col width="30%">
+  <col width="10%">
+            <tr>  <th style="font-weight:bold; background:#fbb710; text-align:center;">Fist Name
+                  <th style="font-weight:bold; background:#fbb710; text-align:center;">E-mail ID
+                  <th style="font-weight:bold; background:#fbb710; text-align:center;">Message
+                  <th style="font-weight:bold; background:#fbb710; text-align:center;">Option
+            </tr>
+        <% kokul.forEach(function(details) { %>
+
+
+<table align="center" width="75%">
+  <col width="10%">
+  <col width="20%">
+  <col width="30%">
+  <col width="10%">
+      <tr>
+                    <td><%= details.firstname %>
+                    <td><%= details.email%>
+                    <td><%= details.message%>
+                    <td style="text-align:center;"><a href="/delete1/<%= details._id %>"><img src="https://img.icons8.com/material-sharp/30/000000/delete-forever.png"/></a>
+      </tr>
+</table>
+            <% }) %>
+    </div>
+</body>
+</html>

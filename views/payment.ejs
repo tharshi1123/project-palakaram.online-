@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="/img/core-img/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+<title>Palakaram.Online</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+/*nav bar*/
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 100px;
+  left: 0;
+  background-color: #fbb710;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 100px;
+  margin-top: -100PX;
+  height: 100%;
+
+}
+
+.sidenav a {
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.sidenav a:hover {
+  color: black;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.nbutton1 {
+  margin-left: 10%;
+  background-color: black;
+  color: black;
+  border: 2px solid #fbb710;
+  text-align:center;
+  width : 80%;
+  border-radius: 10px;
+  vertical-align: middle;
+  text-align:center;
+  padding: 5px;
+}
+
+.nbutton1:hover {
+  background-color: white;
+  color: white;
+}
+
+/*NAV BAR*/
+
+
+/*footer*/
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 15px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    background-color: #fbb710;
+    color: black;
+}
+
+.fa-facebook {
+  background: #fbb710;
+  color: black;
+}
+
+.fa-instagram {
+  background: #fbb710;
+  color: black;
+}
+
+.foot{
+  background-color: black;
+  height: 200px;
+  color: white;
+  margin-top:400px;
+}
+
+.row {
+    margin-right: -25px;
+    margin-left: 75px;
+}
+
+/*footer*/
+
+/*home button*/
+.button {
+padding: 5px 15px;
+background-color: #fbb710; /* Green */
+border-radius:5px;
+color: black;
+text-align: center;
+display: inline-block;
+font-size: 20px;
+transition-duration: 0.2s;
+cursor: pointer;
+outline: none;
+}
+
+
+.button1 {
+background-color: #black;
+color: black;
+border: 0px solid #fbb710;
+}
+
+.button1:hover {
+background-color: black;
+color: white;
+
+}
+/*home button*/
+
+
+.image{
+  padding-left: 1000px;
+  margin-top: -10px;
+}
+
+/*open*/
+.open{
+  margin-right: 20px;
+  padding-left: -1000px;
+}
+/*open*/
+.alert {
+    padding: .75rem 1.25rem;
+    margin-bottom: 50;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: 600px;
+}
+
+</style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no">
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#"><button class="nbutton nbutton1"><a href="/">Home</a></button>
+        <a href="#"><button class="nbutton nbutton1"><a href="/in">Product</a></button>
+        <a href="#"><button class="nbutton nbutton1"><a href="/NovoCadastro1">Contact</a></button>
+        <a href="#"><button class="nbutton nbutton1"><a href="/">Discounts</a></button>
+        <a href="#"><button class="nbutton nbutton1"><a href="/">New this week</a></button>
+      </div>
+      <span class="open" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; <a href="/"><img src="/img/core-img/logo.png" width = "15%" style="margin-bottom:px; margin-left:-2px;"></a></span>
+
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+<div>
+
+  <center>
+
+
+
+
+    <div class="container">
+    <div class="row">
+    <!-- You can make it whatever width you want. I'm making it full width
+    on <= small devices and 4/12 page width on >= medium devices -->
+    <div class="col-xs-12 col-md-4" >
+
+
+    <!-- CREDIT CARD FORM STARTS HERE -->
+    <div class="panel panel-default credit-card-box">
+    <div class="panel-heading display-table" >
+    <div class="row display-tr" >
+    <h3 class="panel-title display-td" >Payment Details</h3>
+    <div class="display-td" >
+    <img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
+    </div>
+    </div>
+    </div>
+    <div class="panel-body">
+    <form role="form" id="payment-form">
+    <div class="row">
+    <div class="col-xs-12">
+    <div class="form-group">
+    <label for="cardNumber">CARD NUMBER</label>
+    <div class="input-group">
+    <input
+    type="tel"
+    class="form-control"
+    name="cardNumber"
+    placeholder="Valid Card Number"
+    autocomplete="cc-number"
+    required autofocus
+    />
+    <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-xs-7 col-md-7">
+    <div class="form-group">
+    <label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
+    <input
+    type="tel"
+    class="form-control"
+    name="cardExpiry"
+    placeholder="MM / YY"
+    autocomplete="cc-exp"
+    required
+    />
+    </div>
+    </div>
+    <div class="col-xs-5 col-md-5 pull-right">
+    <div class="form-group">
+    <label for="cardCVC">CV CODE</label>
+    <input
+    type="tel"
+    class="form-control"
+    name="cardCVC"
+    placeholder="CVC"
+    autocomplete="cc-csc"
+    required
+    />
+    </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-xs-12">
+    <div class="form-group">
+    <label for="couponCode">COUPON CODE</label>
+    <input type="text" class="form-control" name="couponCode" />
+    </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-xs-12">
+    <button class="btn btn-success btn-lg btn-block" type="submit">Start Subscription</button>
+    </div>
+    </div>
+    <div class="row" style="display:none;">
+    <div class="col-xs-12">
+    <p class="payment-errors"></p>
+    </div>
+    </div>
+    </form>
+    </div>
+    </div>
+    <!-- CREDIT CARD FORM ENDS HERE -->
+
+
+    </div>
+
+
+
+    </div>
+    </div>
+
+
+
+  </center>
+    <!-- Footer -->
+<footer class="foot">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://palakaram.com/" style="color: #ffa603;"> Palakaram.online</a><p><br>
+    <a href="https://www.facebook.com/Palakaram.Online/" class="fa fa-facebook"></a>
+    <a href="https://www.instagram.com/palakaram.online/" class="fa fa-instagram"></a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</body>
+</html>

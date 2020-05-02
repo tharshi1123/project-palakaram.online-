@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Marunthu.Boxx</title>
+</head>
+<body>
+
+<!-- //header -->
+<header>
+		<nav>
+			<ul>
+
+        <% if(user){ %>
+      <!--Welcome...!!--><li><a href=""><span class="fa fa-user"></span>
+      <% if (user.twitter.username != null) { %>
+      <%= user.twitter.username %>
+      <% } else if (user.google.email != null) { %>
+      <%= user.google.email %>
+      <% } else if (user.facebook.name  != null)  { %>
+      <%= user.facebook.name  %>
+      <% } else { %>
+      <%= user.local.lastname %>
+      <% } %>
+    </a>
+      </li>
+       <li><a href="/logout"><span class="fa fa-sign-out"></span>Logout</a></li>
+       <% } else{ %>
+      	<li class=""><a href="/login"><span class="fa fa-lock fa-lg"></span> Login</a></li>
+      	<li class=""><a href="/signup"><span class="fa fa-user fa-lg"></span> Sign Up</a></li>
+        <% } %>
+      </ul>
+		</nav>
+</header>
+
+
+
+
+
+
+</body>
+</html>

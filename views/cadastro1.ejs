@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Palakaram.online</title>
+	<link rel="icon" href="/img/core-img/favicon.ico">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="/recursos/cadastro2.css">
+	  <link rel="stylesheet" href="/css/cadastro2.css">
+	<script src="/recursos/cadastro.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	.wizard-card {
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+		border-radius: 10px;
+		width: 300px;
+		margin-left: 475px;
+		margin-top: 100px;
+		padding-top: 10px;
+  }
+
+		.header{
+			font-size: 33px;
+			width: 100%;
+			text-align: center;
+		}
+
+		.input-group {
+			margin: 20px 10px;
+		}
+
+		.input, .textarea {
+			width: 100%;
+			padding: 5px;
+			border: 1px solid #fbb710;
+			border-radius: 8px;
+		}
+		input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 5px #fbb710;
+	transition: border 0.2s linear 0s, box-shadow 0.3s linear 0s;
+  border: 1px solid #fbb710;
+}
+
+	.box{
+	width: 86%;
+	height: 30px;
+	border-radius: 15px;
+	padding-left: 20px;
+	border: 1px solid rgba(0,0,0,.15);
+	flex: 1 1 auto;
+	outline: none;
+	margin-left: 10px;
+	}
+
+	.box1{
+	width: 90%;
+	height: 100px;
+	border-radius: 15px;
+	padding-left: 10px;
+	padding-top: 10px;
+	border: 1px solid rgba(0,0,0,.15);
+	flex: 1 1 auto;
+	outline: none;
+	margin-left: 10px;
+	}
+
+	.button {
+	padding: 5px 67px;
+	background-color: #fbb710; /* Green */
+	border-radius:5px;
+	color: white;
+	text-align: center;
+	display: inline-block;
+	font-size: 20px;
+	margin: -5px;
+	transition-duration: 0.2s;
+	cursor: pointer;
+	}
+
+	.button1 {
+	background-color: #black;
+	color: black;
+	border: 0px solid #fbb710;
+	margin: none;
+	}
+
+	.button1:hover {
+	background-color: black;
+	color: white;
+
+	}
+
+	/*nav bar*/
+
+	body {
+	  font-family: "Lato", sans-serif;
+	}
+
+	.sidenav {
+	  height: 100%;
+	  width: 0;
+	  position: fixed;
+	  z-index: 1;
+	  top: 100px;
+	  left: 0;
+	  background-color: #fbb710;
+	  overflow-x: hidden;
+	  transition: 0.5s;
+	  padding-top: 100px;
+	  margin-top: -100PX;
+	  height: 100%;
+
+	}
+
+	.sidenav a {
+	  padding: 5px;
+	  text-decoration: none;
+	  color: white;
+	  display: block;
+	  transition: 0.3s;
+	  font-size: 15px;
+	  font-weight: 900;
+	}
+
+	.sidenav a:hover {
+	  color: black;
+	}
+
+	.sidenav .closebtn {
+	  position: absolute;
+	  top: 0;
+	  right: 25px;
+	  font-size: 36px;
+	  margin-left: 50px;
+	}
+
+	@media screen and (max-height: 450px) {
+	  .sidenav {padding-top: 15px;}
+	  .sidenav a {font-size: 18px;}
+	}
+
+	.nbutton1 {
+	  margin-left: 10%;
+	  background-color: black;
+	  color: black;
+	  border: 2px solid #fbb710;
+	  text-align:center;
+	  width : 80%;
+	  border-radius: 10px;
+	  vertical-align: middle;
+	  text-align:center;
+	  padding: 5px;
+	}
+
+	.nbutton1:hover {
+	  background-color: white;
+	  color: white;
+	}
+
+	/*NAV BAR*/
+	/*open*/
+	.open{
+	  margin-right: 20px;
+	  padding-left: -1000px;
+	}
+	/*open*/
+
+	body {
+    font-family: "helveticaneuemedium";
+    font-size: 14px;
+}
+
+.element{
+		background-color: #fbb710;
+		font-weight: bold;
+		color: #555555
+}
+
+.aa {
+    outline: none;
+    border: 0 !important;
+    border-radius: 0;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    color: #555555 !important;
+		font-family: sans-serif;
+		border-radius: 4px;
+		padding:10px;
+		padding-left: 30px;
+}
+
+.contact{
+	border-radius: 5px;
+	background-color: #fbb710;
+	width : 265px;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 40px;
+	font-size: 12px;
+	font-family: sans-serif;
+	margin-left: 17px;
+}
+
+.pad{
+	margin-top: 5px;
+}
+
+body {
+ background-image: url("/img/bg-img/login.png");
+ height: 720px;
+ background-repeat: no-repeat;
+}
+	</style>
+
+	</head>
+
+	<body class="exames body" style="width:95%">
+
+		<body translate="no">
+		  <div id="mySidenav" class="sidenav">
+		    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		    <a href="#"><button class="nbutton nbutton1"><a href="/">Home</a></button>
+		    <a href="#"><button class="nbutton nbutton1"><a href="/in">Product</a></button>
+		    <a href="#"><button class="nbutton nbutton1"><a href="/NovoCadastro1">Contact</a></button>
+				<a href="/login"><button class="nbutton nbutton1">Login</a></button>
+		    <a href="/signup"><button class="nbutton nbutton1">Signup</a></button>
+		</a></button>
+
+		  </div>
+		  <span class="open" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;<a href="/"><img src="/img/core-img/logo.png" width = "16%" style="margin-bottom:-29px; margin-left:8px;"><a></span>
+
+		  <script>
+		  function openNav() {
+		    document.getElementById("mySidenav").style.width = "250px";
+		  }
+
+		  function closeNav() {
+		    document.getElementById("mySidenav").style.width = "0";
+		  }
+		  </script>
+
+	<div  class="wizard-card">
+
+		<section class="header">
+	       <h1 class="contact">Contact us</h1>
+
+			</section>
+	<div>
+	<br>
+	<div>
+			<form action="/NovoCadastro1" method="POST">
+				<br >
+
+				<div class="input-group" >
+					<label for="firstname" class="font label" style="margin-left:10px;">First Name:</label><br>
+					<input class="box pad" type="text" id='firstname' name='firstname' tab-index='1' />
+				</div>
+
+				<div class="input-group" >
+					<form action="/action_page.php">
+					<label for="email" class="font" style="margin-left:10px;">Email:</label><br>
+					<input class="box pad" type="text" id='email' name='email' pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required tab-index='3' />
+				</div>
+
+				<div class="input-group">
+					<label for="message" style="margin-left:10px;">Message:</label><br>
+					<textarea class='box1 pad ' name='message' tab-index='5'></textarea>
+
+					<div class="input-group">
+					<button onclick="myFunction()">	<input type="submit" class="button button1" value="Send message" tab-index='6' /></button>
+					<script>
+					function myFunction() {
+						alert("Your Message was Sent!...");
+					}
+					</script>
+					</div>
+					<br>
+			</form>
+		</div>
+	</div>
+	</div>
+	</div>
+
+
+	<!-- ##### jQuery (Necessary for All JavaScript Plugins) ##### -->
+	<script src="/js/jquery/jquery-2.2.4.min.js"></script>
+	<!-- Popper js -->
+	<script src="/js/popper.min.js"></script>
+	<!-- Bootstrap js -->
+	<script src="/js/bootstrap.min.js"></script>
+	<!-- Plugins js -->
+	<script src="/js/plugins.js"></script>
+	<!-- Active js -->
+	<script src="/js/active.js"></script>
+
+
+
+
+
+
+	</body>
+
+	</html>

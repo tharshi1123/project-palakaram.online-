@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="description" content="">
+
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Palakaram.online</title>
+    <link rel="icon" href="/img/core-img/favicon.ico">
+    <link rel="stylesheet" href="/public/recursos/style.css">
+    <link rel="stylesheet" href="/public/recursos/cadastro2.css">
+    <link rel="stylesheet" href="/css/cadastro2.css">
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="includes/css/styles.css" rel="stylesheet">
+    <!-- Include Modernizr in the head, before any other Javascript -->
+    <script src="includes/js/modernizr-2.6.2.min.js"></script>
+<style>
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+.lee1 {
+  background-color:white;
+  margin-left: 300px;
+  width: 975px;
+  height: 700px;
+  margin-top: -780px;
+  padding-top: 50px;
+}
+.lee2{
+margin-top: -60px;
+}
+.pic{
+  width:300px;
+  height: 300px;
+}
+.i{
+  margin-top:-100px;
+}
+.carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+  .car{
+    margin-left: 300px;
+    padding-right: -50px;
+    margin-top: -1850px;
+    width: 975px;
+    padding-bottom: 700px;
+
+  }
+  .sli{
+    height: 550px;
+    width: 980px;
+    padding-left: -500px;
+    margin-left: -130px;
+    margin-bottom: -230px;
+  }
+  .ti{
+    list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   position: -webkit-sticky; /* Safari */
+   position: sticky;
+   top: 0;
+  }
+  .food{
+    width: 100%;
+  }
+</style>
+
+
+</head>
+<body style="width:95%">
+    <div class="main-content-wrapper d-flex clearfix" >
+        <header class="header-area clearfix">
+            <nav class="amado-nav lee2" style="background-color:white; height:1800px;" >
+                <ul class="ti">
+                    <div class="nav-close">
+                      <i class="fa fa-close" aria-hidden="true"></i>
+                  </div>
+                    <div class="logo">
+                      <a href="/"><img src="/img/core-img/logo.png" alt=""></a>
+                  </div>
+
+                    <li class="active"><a href="/">&#x1F3E0; Home</a></li>
+                    <li><a href="/in">&#x2615; Product</a></li>
+                    <li><a href="/NovoCadastro1">&#x1F4E9; Contact</a></li>
+                    <% if(user){ %>
+                  <!--Welcome...!!--><li><a href="#">&#x1F464;
+                  <% if (user.twitter.username != null) { %>
+                  <%= user.twitter.username %>
+                  <% } else if (user.google.email != null) { %>
+                  <%= user.google.email %>
+                  <% } else if (user.facebook.name  != null)  { %>
+                  <%= user.facebook.name  %>
+                  <% } else { %>
+                  <%= user.local.lastname %>
+                  <% } %>
+                </a>
+                  </li>
+                   <li><a href="/logout">&#x1F512; Logout</a></li>
+                   <% } else{ %>
+                    <li class=""><a href="/login">&#x1F511; Login</a></li>
+                    <li class=""><a href="/signup">&#x1F513; Sign Up</a></li>
+                    <% } %>
+
+                    <div class="amado-btn-group mt-30 mb-100">
+                        <a href="/in1" class="btn amado-btn mb-15">%Discount%</a>
+                        <a href="/in2" class="btn amado-btn active">New this week</a>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+        <div>
+            <div class="car">
+                <div class="carousel slide" id="myCarousel">
+                    <ol class="carousel-indicators">
+                      <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+                      <li data-slide-to="1" data-target="#myCarousel"></li>
+                      <li data-slide-to="2" data-target="#myCarousel"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                      <div class="item active" id="slide">
+                        <div class="carousel-caption">
+                          <div class="sli">
+                          <img src="/img/bg-img/lee1.jpg" alt="" class="sli">
+                          </div>
+                          <div class="sli2">
+                          <h4 class="sl">palakaram</h4>
+                          </div>
+                          <p>Learn how to build your first responsive website with the brand new Twitter Bootstrap 3!</p>
+                          <br>
+                        </div>
+                      </div>
+
+                      <div class="item" id="slide">
+                        <div class="carousel-caption">
+                          <div class="sli">
+                          <img src="/img/bg-img/lee2.jpeg" alt="" class="sli">
+                          </div>
+                          <div class="sli2">
+                          <h4 class="sl">palakaram</h4>
+                          </div>
+                          <p>PSD to HTML5 &amp; CSS3 is a popular Udemy course that has helped thousands of aspiring web designers launch their web design career.</p>
+                          <br>
+                        </div>
+                      </div>
+
+                      <div class="item" id="slide">
+                        <div class="carousel-caption">
+                          <div class="sli">
+                          <img src="/img/bg-img/lee5.jpeg" alt="" class="sli">
+                          </div>
+                          <div class="sli2">
+                          <h4 class="sl">palakaram</h4>
+                          </div>
+                          <p>Learn how to buy a perfect domain name and hosting package, and get your website live on the web with ease.</p>
+                          <br>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                </br>
+                </br>
+            </div>
+        </div>
+
+        <div class="products-catagories-area clearfix" ><br><br><br>
+            <div class="amado-pro-catagory clearfix lee1">
+              <div class="single-products-catagory clearfix">
+                  <a href="/order">
+                      <img src="/img/bg-img/honey1.jpg" alt="" class=" pic">
+                      <div class="hover-content">
+                          <div class="line"></div>
+                          <p style="color:black;">Rs 1000</p>
+                          <h4 style="color:black;">HONEY</h4>
+                      </div>
+                  </a>
+              </div>
+
+              <div class="single-products-catagory clearfix">
+                  <a href="/order">
+                      <img src="/img/bg-img/chillie1.jpg" alt="" class=" pic">
+                      <div class="hover-content">
+                          <div class="line"></div>
+                          <p  style="color:black;">Rs 600</p>
+                          <h4 style="color:black;">CHILLI POWDER</h4>
+                      </div>
+                  </a>
+              </div>
+
+              <div class="single-products-catagory clearfix">
+                  <a href="/order">
+                      <img src="/img/bg-img/prawn.jpeg" alt="" class=" pic">
+                      <div class="hover-content">
+                          <div class="line"></div>
+                          <p  style="color:black;">Rs 600</p>
+                          <h4 style="color:black;">DRIED PRAWNS</h4>
+                      </div>
+                  </a>
+              </div>
+
+              <div class="single-products-catagory clearfix">
+                  <a href="/order">
+                      <img src="img/bg-img/cumin.jpeg" alt="" class=" pic">
+                      <div class="hover-content">
+                          <div class="line"></div>
+                          <p  style="color:black;">Rs 1000</p>
+                          <h4 style="color:black;">CUMIN SEEDS</h4>
+                      </div>
+                  </a>
+              </div>
+
+              <div class="single-products-catagory clearfix">
+                  <a href="/order">
+                      <img src="img/bg-img/pakoda.jpg" alt="" class=" pic">
+                      <div class="hover-content">
+                          <div class="line"></div>
+                          <p  style="color:black;">Rs 1000</p>
+                          <h4 style="color:black;">PAKODA</h4>
+                      </div>
+                  </a>
+              </div>
+
+              <div class="single-products-catagory clearfix">
+                  <a href="/order">
+                      <img src="img/bg-img/cardamon.jpg" alt="" class=" pic">
+                      <div class="hover-content">
+                            <div class="line"></div>
+                            <p style="color:black;">Rs 300</p>
+                            <h4 style="color:black;">CARDAMON</h4>
+                      </div>
+                  </a>
+              </div>
+
+              <div class="single-products-catagory clearfix">
+                    <a href="/order">
+                        <img src="img/bg-img/Turmeric.jpg" alt="" class=" pic">
+                        <div class="hover-content">
+                              <div class="line"></div>
+                              <p style="color:black;">Rs 600</p>
+                              <h4 style="color:black;">TURMERIC</h4>
+                        </div>
+                    </a>
+              </div>
+
+              <div class="single-products-catagory clearfix">
+                  <a href="/order">
+                      <img src="img/bg-img/kura.jpg" alt="" class=" pic">
+                      <div class="hover-content">
+                            <div class="line"></div>
+                            <p style="color:black;">Rs 1000</p>
+                            <h4 style="color:black;">KURAKAN FLOUR</h4>
+                      </div>
+                    </a>
+              </div>
+
+              <div class="single-products-catagory clearfix">
+                    <a href="/order">
+                        <img src="img/bg-img/murukku.jpg" alt="" class=" pic">
+                        <div class="hover-content">
+                              <div class="line"></div>
+                              <p style="color:black;">Rs 600</p>
+                              <h4 style="color:black;">MURUKKU</h4>
+                        </div>
+                    </a>
+              </div>
+
+              <div class="single-products-catagory clearfix">
+                    <a href="/order">
+                        <img src="img/bg-img/Green gram balls.JPG" alt="" class=" pic">
+                        <div class="hover-content">
+                              <div class="line"></div>
+                              <p style="color:black;">Rs 600</p>
+                              <h4 style="color:black;">GREEN GRAM BALLS</h4>
+                        </div>
+                    </a>
+              </div>
+
+              <div class="single-products-catagory clearfix">
+                    <a href="/order">
+                        <img src="img/bg-img/mix.jpg" alt="" class=" pic">
+                        <div class="hover-content">
+                              <div class="line"></div>
+                              <p style="color:black;">Rs 600</p>
+                              <h4 style="color:black;">MIXTURE</h4>
+                        </div>
+                    </a>
+              </div>
+
+              <div class="single-products-catagory clearfix">
+                  <a href="/order">
+                      <img src="img/bg-img/white.jpeg" alt="" class=" pic">
+                      <div class="hover-content">
+                          <div class="line"></div>
+                          <p style="color:black;">Rs 1000</p>
+                          <h4 style="color:black;">WHITE PEPPER POWDER</h4>
+                      </div>
+                  </a>
+              </div>
+            </div>
+        </div>
+    </div>
+
+<br><br><br><br><br><br><br><br>
+
+<center>
+    <footer class="footer_area clearfix food" style="margin-left:50px;">
+        <div class="">
+            <div class="">
+                <div class="">
+                    <div class="single_widget_area">
+                        <center>
+                          <div class="">
+                            <a href="/"><img src="/img/core-img/logo2.png" alt=""></a>
+                          </div>
+                          <p class="copywrite">
+                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with by <a href="https://palakaram.online" target="_blank">Palakaram.Online</a>
+                          </p>
+                          <table style="color: white; border-spacing: 20px; text-align: center;">
+                            <tr>
+                              <td><a href="https://www.facebook.com/Palakaram.Online/" class="fa fa-facebook"></a>
+                              <td><a href="https://www.instagram.com/palakaram.online/" class="fa fa-instagram"></a>
+                            </tr>
+                            <tr>
+                              <td>Click to<br>Facebook</td>
+                              <td>Click to<br>Instagram</td>
+                            </tr>
+                          </table>
+                          <br>
+                        </center>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </footer>
+</center>
+
+                <!-- Single Widget Area -->
+
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- ##### jQuery (Necessary for All JavaScript Plugins) ##### -->
+    <script src="/js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="/js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="/js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="/js/active.js"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+
+    <!-- If no online access, fallback to our hardcoded version of jQuery -->
+    <script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+    <!-- Bootstrap JS -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="includes/js/script.js"></script>
+
+
+</body>
+
+</html>
