@@ -682,15 +682,15 @@ module.exports = function(app, passport) {
                     var transporter = nodemailer.createTransport({
                      service: 'gmail',
                      auth: {
-                            user: 'nitharthaya123@gmail.com',
-                            pass: 'nithar1234'
+                            user: 'tkokulan97@gmail.com',
+                            pass: 'kokulan97'
                         }
                     });
                     var user = req.user
                     var name = user.local.lastname
                     const mailOptions = {
-                      from: 'nitharthaya123@gmail.com',// sender address
-                      to: 'nitharthaya123@gmail.com', // list of receivers
+                      from: 'tkokulan97@gmail.com',// sender address
+                      to: 'tkokulan97@gmail.com', // list of receivers
                       subject: ' New Marunthu.Box Registration Details', // Subject line
                       html: '<div style="background-color:#eeeeef;padding:50px 0"><table style="width:540px" border="0" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td style="padding:40px 30px 30px 30px" align="center" bgcolor="#33333e"><h1 style="color:#fff">Team Marunthu.Box,<br>Register Successfully. </h1></td></tr><tr><td bgcolor="#ffffff" style="padding:40px 30px 40px 30px"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td width="260" valign="top"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td>Hello ' + name + '! We got a Oder  from you. please check in your dashboard</td></tr><tr><td style="padding:10px 0 0 0">Two wheeler id: '+newhost.carId+  '</td></tr><tr><td style="padding:10px 0 0 0">First name: '+user.local.firstname+ '</td></tr><tr><td style="padding:10px 0 0 0">Last name: '+ user.local.lastname+ '</td></tr><tr><td style="padding:10px 0 0 0">Email: '+newhost.email+' </td> </tr><tr><td style="padding:10px 0 0 0">Phone number: '+newhost.phonenumber+ '</td></tr><tr><td style="padding:10px 0 0 0">Address: '+newhost.address+ '</td></tr><tr><td style="padding:10px 0 0 0">Nic/passport: '+newhost.nic+ '</td></tr><tr><td style="padding:10px 0 0 0">From this date: '+newhost.fdate+ '</td></tr><tr><td style="padding:10px 0 0 0">Until this date: ' +newhost.udate+ '</td></tr></tbody></table></td></tr></tbody></table></td></tr><tr><td align="center" bgcolor="#fff"><h3>Thank you<br/>Fernweh Team</h3></td></tr><tr><td style="background-color:#ffffff;padding:30px 30px 30px 30px"><table border="0" width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td style="font-family:Arial,sans-serif;font-size:14px">® Fernweh, 2019</td></tr></tbody></table></td></tr></tbody></table></div>' // plain text body
                     };
@@ -717,8 +717,8 @@ module.exports = function(app, passport) {
                                     var transporter = nodemailer.createTransport({
                                      service: 'gmail',
                                      auth: {
-                                            user: 'nitharthaya123@gmail.com',
-                                            pass: 'nithar1234'
+                                            user: 'tkokulan97@gmail.com',
+                                            pass: 'kokulan97'
                                         }
                                     });
                                     var user = req.user
@@ -726,7 +726,7 @@ module.exports = function(app, passport) {
 
                                     const mailOptions = {
 
-                                      from: 'nitharthaya123@gmail.com', // sender address
+                                      from: 'tkokulan97@gmail.com', // sender address
                                       to: user.local.email, // list of receivers
                                       subject: 'Marunthu.Box Registration Details', // Subject line
                                       html: '<div style="background-color:#eeeeef;padding:50px 0"><table style="width:540px" border="0" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td style="padding:10px 30px 10px 30px" align="center" bgcolor="#33333e"><h1 style="color:#fff">Hi ' + user.local.lastname + ',</h1><h2 style="color:#fff">Your order has been placed successfully. We will contact you about the order as soon as possible. </h2></td></tr><tr><td bgcolor="#ffffff" style="padding:40px 30px 10px 30px"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td width="260" valign="top"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td>This is a system generated email and please do not reply. For more information please contact to +94 76 025 3735 .</td></tr><h3 style="text-align:center;">  Order Deatils </h3><tr><td style="padding:10px 0 0 0">  </td></tr><tr><td style="padding:10px 0 0 0">First name: '+user.local.firstname+ '</td></tr><tr><td style="padding:10px 0 0 0">Last name: '+ user.local.lastname+ '</td></tr><tr><td style="padding:10px 0 0 0">Email: '+newhost.email+ '</td></tr><tr><td style="padding:10px 0 0 0">Phone number: '+newhost.phonenumber+ '</td></tr><tr><td style="padding:10px 0 0 0">Address: '+newhost.address+ '</td></tr><tr><td style="padding:10px 0 0 0">Nic/passport: '+newhost.nic+ '</td></tr><tr><td style="padding:10px 0 0 0">From this date: '+newhost.fdate+ '</td></tr><tr><td style="padding:10px 0 0 0">Until this date: ' +newhost.udate+ '</td></tr></tbody></table></td></tr></tbody></table></td></tr><tr><td align="center" bgcolor="#fff"><h3>Thank you<br/>Fernweh Team</h3></td></tr><tr><td style="background-color:#33333d;padding:20px 30px 20px 30px"><table border="0" width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td style="font-family:Arial,sans-serif;font-size:14px;color:#fff">® Marunthu.Box, 2019</td></tr></tbody></table></td></tr></tbody></table></div>' // plain text body
